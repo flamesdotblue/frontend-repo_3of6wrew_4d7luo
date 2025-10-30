@@ -3,7 +3,32 @@
 > vite
 
 
-  VITE v5.4.20  ready in 310 ms
+  VITE v5.4.20  ready in 487 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.18.129:3000/
+6:27:44 AM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/Hero3D.jsx:22:12: ERROR: Unterminated regular expression
+6:27:45 AM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/Hero3D.jsx:22:12: ERROR: Unterminated regular expression
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/Hero3D.jsx:22:12
+  
+  Unterminated regular expression
+  20 |          {/* flowing scanlines */
+  21 |          <div className="absolute inset-0 bg-[repeating-linear-gradient(90deg,transparent,transparent_18px,rgba(168,85,247,0.08)_18px,rgba(168,85,247,0.08)_19px)] animate-[pulse_6s_ease-in-out_infinite] opacity-60" />
+  22 |        </div>
+     |              ^
+  23 |  
+  24 |        {/* Soft gradient overlay for readability */}
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
