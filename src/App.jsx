@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero3D from './components/Hero3D';
 import FeaturesGrid from './components/FeaturesGrid';
-import PricingPlans from './components/PricingPlans';
+import CreditsCalculator from './components/CreditsCalculator';
 import SupportSection from './components/SupportSection';
 
 export default function App() {
@@ -15,7 +15,7 @@ export default function App() {
           </a>
           <nav className="hidden items-center gap-6 text-sm text-white/70 sm:flex">
             <a href="#features" className="hover:text-white">Features</a>
-            <a href="#pricing" className="hover:text-white">Pricing</a>
+            <a href="#pricing" className="hover:text-white">Credits</a>
             <a href="#demo" className="hover:text-white">Demo</a>
           </nav>
           <a href="#pricing" className="rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold text-black hover:bg-emerald-400">Start</a>
@@ -25,7 +25,7 @@ export default function App() {
       <main>
         <Hero3D />
         <FeaturesGrid />
-        <PricingPlans />
+        <CreditsCalculator />
         <SupportSection />
       </main>
 
